@@ -442,8 +442,8 @@ function HomeTab({
               <div className="flex items-center gap-4">
                 <div className={`w-12 h-12 rounded-full flex items-center justify-center transition-transform group-hover:scale-105 ${
                   tx.type === 'receive' ? 'bg-emerald-50 text-emerald-600' : 
-                  tx.type === 'send' ? 'bg-jade/10 text-jade' : 
-                  'bg-blue-50 text-blue-600'
+                  tx.type === 'send' ? 'bg-red-50 text-red-500' : 
+                  'bg-blue-50 text-blue-500'
                 }`}>
                   {tx.type === 'receive' ? <ArrowDownLeft size={20} /> : 
                    tx.type === 'send' ? <ArrowUpRight size={20} /> : 
@@ -457,8 +457,8 @@ function HomeTab({
               <div className="text-right">
                 <p className={`text-sm font-semibold mb-0.5 ${
                   tx.type === 'receive' ? 'text-emerald-600' : 
-                  tx.type === 'send' ? 'text-ebony' : 
-                  'text-blue-600'
+                  tx.type === 'send' ? 'text-red-500' : 
+                  'text-blue-500'
                 }`}>{tx.amount}</p>
                 <p className="text-xs text-ebony/60">{tx.value}</p>
               </div>
@@ -899,7 +899,7 @@ function NotificationsTab() {
     { id: 1, title: 'Payment Received', desc: 'You received 500 KRIS from Sarah.', time: '2m ago', icon: <ArrowDownLeft size={20} />, color: 'text-emerald-600', bg: 'bg-emerald-50' },
     { id: 2, title: 'Security Alert', desc: 'New login from Mac OS device.', time: '1h ago', icon: <AlertTriangle size={20} />, color: 'text-amber-600', bg: 'bg-amber-50' },
     { id: 3, title: 'System Update', desc: 'KerisWallet v2.4 is now live. Check out the new features.', time: '1d ago', icon: <Zap size={20} />, color: 'text-blue-600', bg: 'bg-blue-50' },
-    { id: 4, title: 'Payment Sent', desc: 'You sent 120 KRIS to Coffee Shop.', time: '2d ago', icon: <ArrowUpRight size={20} />, color: 'text-jade', bg: 'bg-jade/10' },
+    { id: 4, title: 'Payment Sent', desc: 'You sent 120 KRIS to Coffee Shop.', time: '2d ago', icon: <ArrowUpRight size={20} />, color: 'text-red-500', bg: 'bg-red-50' },
   ];
  
   return (
