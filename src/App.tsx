@@ -41,7 +41,7 @@ function LoadingScreen() {
     <motion.div 
       initial={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ duration: 0.8, ease: "easeInOut" }}
+      transition={{ duration: 1.0, ease: "easeInOut" }}
       className="fixed inset-0 z-[100] bg-alabaster flex flex-col items-center justify-center p-6"
     >
       <motion.div
@@ -52,7 +52,7 @@ function LoadingScreen() {
       >
         <div className="w-32 h-32 rounded-full bg-white shadow-2xl shadow-jade/20 flex items-center justify-center overflow-hidden border-4 border-jade/10">
           <img 
-            src="https://cdn.jumpshare.com/preview/v8xjehqyLBLmCjNpmWPEY3l5JAZir8nFMNvd7YDrCG74nsl9gZIQ2P6UK_LH9u48sq0uV8pNuvHVjoXeRDp3XPaq7KA8Cpkm6Y4u8JgHc30" 
+            src="./images/keriscoin-logo.svg" 
             alt="KerisWallet Logo" 
             className="w-24 h-24 object-contain"
             referrerPolicy="no-referrer"
@@ -60,7 +60,7 @@ function LoadingScreen() {
         </div>
         <motion.div 
           animate={{ rotate: 360 }}
-          transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
+          transition={{ duration: 6, repeat: Infinity, ease: "linear" }}
           className="absolute -inset-2 border-2 border-dashed border-jade/30 rounded-full"
         />
       </motion.div>
