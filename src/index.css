@@ -10,6 +10,7 @@
   --color-test: #d3ede4;
   --color-test2: #add7b9;
   --color-test1: #E6F4F1;
+  --color-overlay: #a5d8b6;
 }
 
 @layer utilities {

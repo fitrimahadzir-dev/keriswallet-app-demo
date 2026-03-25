@@ -193,9 +193,9 @@ export default function App() {
 
         {/* Bottom Navigation */}
         <div className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-md z-50 px-6 pb-6 pt-4 pointer-events-none">
-        {/* Green Overlay Gradient */}
-          <div className="absolute bottom-0 left-0 right-0 h-45 bg-gradient-to-t from-jade/70 to-transparent pointer-events-none" />
-
+       {/* Green Overlay Gradient */}
+          <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-overlay/99 to-transparent pointer-events-none" />
+          
           <div className="relative bg-white backdrop-blur-2xl rounded-[1.2rem] shadow-[0_8px_32px_rgba(16,22,45,0.15)] border border-white/60 px-4 py-2 flex items-center justify-between pointer-events-auto">
             <NavItem icon={<Home size={24} />} active={activeTab === 'Home'} onClick={() => handleSetActiveTab('Home')} />
             <NavItem icon={<BarChart2 size={24} />} active={activeTab === 'Markets'} onClick={() => handleSetActiveTab('Markets')} />
